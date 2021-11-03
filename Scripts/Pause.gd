@@ -10,4 +10,3 @@ func _ready():
 
 func _draw():
 	draw_string(font, Vector2(180, 540), 'PRESS ESC FOR CONTINUE')
-	update()
