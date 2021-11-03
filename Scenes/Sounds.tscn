@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sounds/minecraft-explosion-green-screen.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/Probitie.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/Suppressed-Bushmaster-ACR-5.56-Close-Gunshot-E-www.fesliyanstudios.com.mp3" type="AudioStream" id=3]
+
+[node name="Sounds" type="Node"]
+script = ExtResource( 2 )
+
+[node name="ShootAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -13.0
+
+[node name="Probitie" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )

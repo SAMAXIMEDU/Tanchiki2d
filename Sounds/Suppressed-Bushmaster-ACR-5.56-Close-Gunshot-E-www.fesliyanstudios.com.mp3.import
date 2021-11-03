@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Suppressed-Bushmaster-ACR-5.56-Close-Gunshot-E-www.fesliyanstudios.com.mp3-ea8a8d3fa3040abe083c3af2236db3c8.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Suppressed-Bushmaster-ACR-5.56-Close-Gunshot-E-www.fesliyanstudios.com.mp3"
+dest_files=[ "res://.import/Suppressed-Bushmaster-ACR-5.56-Close-Gunshot-E-www.fesliyanstudios.com.mp3-ea8a8d3fa3040abe083c3af2236db3c8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

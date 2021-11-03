@@ -1,0 +1,83 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/tan4iloLogo.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://assets/tankBg.jpg" type="Texture" id=3]
+[ext_resource path="res://justice.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Sounds/menuMusic.mp3" type="AudioStream" id=5]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tan4iloLogo" type="Sprite" parent="."]
+modulate = Color( 100, 100, 100, 1 )
+position = Vector2( 572, 89 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 128.0
+margin_top = 600.0
+margin_right = 602.0
+margin_bottom = 965.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+margin_right = 474.0
+margin_bottom = 119.0
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.505882, 0.631373, 0.756863, 1 )
+enabled_focus_mode = 0
+text = "Start"
+flat = true
+align = 0
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+visible = false
+margin_top = 123.0
+margin_right = 474.0
+margin_bottom = 242.0
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.505882, 0.631373, 0.756863, 1 )
+enabled_focus_mode = 0
+text = "Options"
+flat = true
+align = 0
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+margin_top = 123.0
+margin_right = 474.0
+margin_bottom = 242.0
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.505882, 0.631373, 0.756863, 1 )
+enabled_focus_mode = 0
+text = "Quit"
+flat = true
+align = 0
+
+[node name="tankBg" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+z_index = -1
+texture = ExtResource( 3 )
+centered = false
+
+[node name="menuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

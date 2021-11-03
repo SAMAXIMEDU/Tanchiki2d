@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/minecraft-explosion-green-screen.mp3-a1cd9388fc10771a5d6a11daac7d87bd.mp3str"
+
+[deps]
+
+source_file="res://Sounds/minecraft-explosion-green-screen.mp3"
+dest_files=[ "res://.import/minecraft-explosion-green-screen.mp3-a1cd9388fc10771a5d6a11daac7d87bd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
